@@ -66,48 +66,62 @@ struct EdgeInsets
 struct RESOLUTION_INFO
 {
   //!< Screen overscan boundary
+  // 显示边界的设置
   OVERSCAN Overscan;
 
   //!< Edge insets to scale the GUI to prevent the display notch from hiding a part of the GUI
+  // GUI 缩放的边距设置
   EdgeInsets guiInsets;
 
   //!< Specify if it is a fullscreen resolution, otherwise windowed
+  // 指示是否为全屏分辨率
   bool bFullScreen;
 
   //!< Width GUI resolution (pixels), may differ from the screen value if GUI resolution limit, 3D is set or in HiDPI screens
+  // GUI 分辨率的宽度（像素）
   int iWidth;
 
   //!< Height GUI resolution (pixels), may differ from the screen value if GUI resolution limit, 3D is set or in HiDPI screens
+  // GUI 分辨率的高度（像素）
   int iHeight;
 
   //!< Number of pixels of padding between stereoscopic frames
   int iBlanking;
 
   //!< Screen width (logical width in pixels)
+  // 屏幕宽度（逻辑宽度，像素）
   int iScreenWidth;
 
   //!< Screen height (logical height in pixels)
+  // 屏幕高度（逻辑高度，像素）
   int iScreenHeight;
 
   //!< The vertical subtitle baseline position, may be changed by Video calibration
+  // 垂直字幕基线位置，可能会被视频校准改变
   int iSubtitles;
 
   //!< Properties of the resolution e.g. interlaced mode
+  // 分辨率的属性，例如隔行模式
   uint32_t dwFlags;
 
   //!< Pixel aspect ratio
+  // 像素纵横比
   float fPixelRatio;
 
   //!< Refresh rate
+  // 刷新率
   float fRefreshRate;
 
   //!< Resolution mode description
+  // 分辨率模式描述
   std::string strMode;
 
   //!< Resolution output description
+  // 分辨率输出描述
   std::string strOutput;
 
   //!< Resolution ID
+  // 分辨率 ID
   std::string strId;
 
 public:
